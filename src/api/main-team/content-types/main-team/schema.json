@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_teams",
+  "info": {
+    "singularName": "main-team",
+    "pluralName": "main-teams",
+    "displayName": "Main-team"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "mainTeamItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "advantages.advantages"
+    }
+  }
+}

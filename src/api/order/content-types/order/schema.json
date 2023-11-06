@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "clientEmail": {
+      "type": "email"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "clientFirstName": {
+      "type": "string"
+    },
+    "clientLastName": {
+      "type": "string"
+    },
+    "clientPhone": {
+      "type": "string"
+    },
+    "clientDeliveryAddress": {
+      "type": "string"
+    }
+  }
+}
